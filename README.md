@@ -81,6 +81,7 @@
   - `table3_ablation_analysis.csv` - анализ важности признаков
   - `table4_business_impact.csv` - бизнес-эффект от внедрения
 - **`results/figures/`** - графики и диаграммы (PNG формат, высокое разрешение)
+  - `architecture_diagram.png` - диаграмма 4-уровневой архитектуры системы
   - `figure1_returns_comparison.png` - сравнение доходностей стратегий
   - `figure2_sharpe_comparison.png` - динамика коэффициента Шарпа
   - `figure3_r2_comparison.png` - точность прогнозов (R²)
