@@ -85,7 +85,6 @@
   - `figure1_returns_comparison.png` - сравнение доходностей стратегий
   - `figure2_sharpe_comparison.png` - динамика коэффициента Шарпа
   - `figure3_r2_comparison.png` - точность прогнозов (R²)
-  - `figure4_cumulative_returns.png` - кумулятивная доходность
   - `figure5_price_improvements.png` - улучшение ценовых прогнозов
   - `figure6_horizons_comparison.png` - сравнение горизонтов прогнозирования
   - `figure7_feature_importance.png` - важность признаков (ablation study)
