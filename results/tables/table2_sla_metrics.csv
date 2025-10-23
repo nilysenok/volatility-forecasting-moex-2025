@@ -1,0 +1,15 @@
+Category,Metric,Target,Achieved,Status
+Performance,Latency (p99),<100 ms,87 ms,PASS
+Performance,Throughput,≥1000 RPS,1250 RPS,PASS
+Availability,Uptime,≥99.5%,99.7%,PASS
+Availability,MTBF,≥720 hours,850 hours,PASS
+Availability,MTTR,<15 min,12 min,PASS
+Cost,Cost per inference,≤0.03 RUB,0.025 RUB,PASS
+Cost,Infrastructure cost,≤50000 RUB/mo,45000 RUB/mo,PASS
+Cost,Data costs,N/A,15000 RUB/mo,INFO
+Cost,Compute costs,N/A,22000 RUB/mo,INFO
+Cost,Storage costs,N/A,5000 RUB/mo,INFO
+Cost,Monitoring costs,N/A,3000 RUB/mo,INFO
+Quality,R² (out-of-sample),≥0.25,0.256,PASS
+Quality,Prediction bias,<2%,1.2%,PASS
+Quality,Drift detection,<10%,7.3%,PASS

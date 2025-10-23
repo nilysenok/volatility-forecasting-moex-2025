@@ -1,0 +1,6 @@
+Feature Group,Full Model R²,After Removal R²,Delta R²,Contribution %,Computational Cost Reduction
+HAR Components (RV_daily/weekly/monthly),0.256,0.056,-0.200,78%,0%
+Vol_Ratio + RSI,0.256,0.217,-0.039,15%,0%
+Other Technical Indicators,0.256,0.239,-0.017,7%,40%
+Microstructure (Bid-Ask/Volume),0.256,0.248,-0.008,3%,25%
+All Non-HAR Features,0.256,0.178,-0.078,30%,65%

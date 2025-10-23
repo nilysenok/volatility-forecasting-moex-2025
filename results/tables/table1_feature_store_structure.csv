@@ -1,0 +1,13 @@
+Feature Group,Feature Name,Storage,Update Frequency,Access Latency
+HAR Components,RV_daily,Redis + InfluxDB,Daily EOD,<10 ms
+HAR Components,RV_weekly,Redis + InfluxDB,Daily EOD,<10 ms
+HAR Components,RV_monthly,Redis + InfluxDB,Daily EOD,<10 ms
+Technical Indicators,RSI_14,Redis,Intraday (1h),<5 ms
+Technical Indicators,Vol_Ratio,Redis,Intraday (1h),<5 ms
+Technical Indicators,MACD,Redis,Intraday (1h),<5 ms
+Technical Indicators,Bollinger_Width,Redis,Intraday (1h),<5 ms
+Microstructure,Bid_Ask_Spread,Redis,Real-time (tick),<3 ms
+Microstructure,Volume_Imbalance,Redis,Real-time (tick),<3 ms
+Microstructure,Trade_Intensity,Redis,Real-time (5min),<5 ms
+Market Regime,Volatility_Regime,Redis,Daily,<10 ms
+Market Regime,Trend_Strength,Redis,Intraday (1h),<5 ms

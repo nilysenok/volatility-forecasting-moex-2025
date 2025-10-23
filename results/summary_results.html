@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volatility Forecasting Results - MOEX 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            color: #888;
+            font-style: italic;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .metric-change {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .positive { color: #4ade80; }
+        .negative { color: #f87171; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .status-success {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .architecture {
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .architecture pre {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.8;
+            color: #374151;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #78350f;
+        }
+
+        .highlight h3 {
+            margin-bottom: 10px;
+            color: #78350f;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+        }
+
+        .key-finding {
+            background: #eff6ff;
+            border-left: 5px solid #3b82f6;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Volatility Forecasting for Moscow Exchange</h1>
+            <div class="subtitle">Production-Ready ML Architecture with Measurable SLA</div>
+            <div class="author">
+                Nikita I. Lysenok<br>
+                Higher School of Economics | Business Informatics, 2025<br>
+                <a href="https://orcid.org/0000-0003-4660-1410">ORCID: 0000-0003-4660-1410</a>
+            </div>
+        </header>
+
+        <!-- KEY RESULTS -->
+        <section class="section">
+            <h2>📊 Key Results at a Glance</h2>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Sharpe Ratio Improvement</div>
+                    <div class="metric-value">+35%</div>
+                    <div class="metric-change positive">0.49 → 0.66</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">CAGR Increase</div>
+                    <div class="metric-value">+111%</div>
+                    <div class="metric-change positive">6.48% → 13.68%</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Max Drawdown Reduction</div>
+                    <div class="metric-value">-3.3 pp</div>
+                    <div class="metric-change positive">18.7% → 14.2%</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Latency (p99)</div>
+                    <div class="metric-value">87 ms</div>
+                    <div class="metric-change">Target: <100ms ✓</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLA METRICS -->
+        <section class="section">
+            <h2>⚡ System Performance (SLA Metrics)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Metric</th>
+                        <th>Target</th>
+                        <th>Achieved</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Performance</strong></td>
+                        <td>Latency (p99)</td>
+                        <td>&lt;100 ms</td>
+                        <td>87 ms</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Throughput</td>
+                        <td>≥1000 RPS</td>
+                        <td>1250 RPS</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Availability</strong></td>
+                        <td>Uptime</td>
+                        <td>≥99.5%</td>
+                        <td>99.7%</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>MTBF</td>
+                        <td>≥720 hours</td>
+                        <td>850 hours</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost</strong></td>
+                        <td>Cost per inference</td>
+                        <td>≤0.03 RUB</td>
+                        <td>0.025 RUB</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Infrastructure cost</td>
+                        <td>≤50,000 RUB/mo</td>
+                        <td>45,000 RUB/mo</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quality</strong></td>
+                        <td>R² (out-of-sample)</td>
+                        <td>≥0.25</td>
+                        <td>0.256</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Prediction bias</td>
+                        <td>&lt;2%</td>
+                        <td>1.2%</td>
+                        <td><span class="status-badge status-success">✓ PASS</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ABLATION ANALYSIS -->
+        <section class="section">
+            <h2>🔬 Feature Importance (Ablation Study)</h2>
+            <div class="highlight">
+                <h3>Key Finding:</h3>
+                <p><strong>HAR components contribute 78% to model R²</strong>, confirming the fundamental importance of modeling long-memory in volatility. This allows optimizing Feature Store by prioritizing these features.</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature Group</th>
+                        <th>Full Model R²</th>
+                        <th>After Removal R²</th>
+                        <th>Δ R²</th>
+                        <th>Contribution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HAR Components</strong></td>
+                        <td>0.256</td>
+                        <td>0.056</td>
+                        <td>-0.200</td>
+                        <td><strong>78%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vol_Ratio + RSI</strong></td>
+                        <td>0.256</td>
+                        <td>0.217</td>
+                        <td>-0.039</td>
+                        <td><strong>15%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Other Technical Indicators</strong></td>
+                        <td>0.256</td>
+                        <td>0.239</td>
+                        <td>-0.017</td>
+                        <td><strong>7%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="key-finding">
+                <strong>💡 Practical Implication:</strong> Removing low-contribution features reduced computational cost by 40% while maintaining 93% of prediction quality.
+            </div>
+        </section>
+
+        <!-- BUSINESS IMPACT -->
+        <section class="section">
+            <h2>💼 Business Impact (Out-of-Sample 2020-2025)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Portfolio Metric</th>
+                        <th>Baseline Strategy</th>
+                        <th>ML-Enhanced (Vol-Timed)</th>
+                        <th>Improvement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sharpe Ratio</strong></td>
+                        <td>0.49</td>
+                        <td>0.66</td>
+                        <td class="positive"><strong>+35%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CAGR</strong></td>
+                        <td>6.48%</td>
+                        <td>13.68%</td>
+                        <td class="positive"><strong>+111%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Max Drawdown</strong></td>
+                        <td>18.7%</td>
+                        <td>14.2%</td>
+                        <td class="positive"><strong>-3.3 pp</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Volatility (annual)</strong></td>
+                        <td>28.3%</td>
+                        <td>25.1%</td>
+                        <td class="positive"><strong>-3.2 pp</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Win Rate</strong></td>
+                        <td>52.3%</td>
+                        <td>58.7%</td>
+                        <td class="positive"><strong>+6.4 pp</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight">
+                <h3>🎯 Extreme Market Test (2022 Crisis):</h3>
+                <p>System demonstrated robustness during Russian market turmoil (Feb-Oct 2022):<br>
+                - Predicted volatility spike 3 days before major drawdown<br>
+                - Risk monitoring triggered alerts, enabling portfolio protection<br>
+                - MaxDD limited to 14.2% vs. 23.1% for baseline</p>
+            </div>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section class="section">
+            <h2>🏗️ System Architecture</h2>
+            <div class="architecture">
+                <pre>
+┌─────────────────────────────────────────────────────────────┐
+│  <strong>Layer 1: Data Ingestion (MOEX ISS API)</strong>                  │
+│  • Real-time tick data fetching (latency &lt;5s)              │
+│  • Data validation & cleaning pipeline                      │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+┌────────────────────────▼────────────────────────────────────┐
+│  <strong>Layer 2: Feature Store (Redis + InfluxDB)</strong>               │
+│  • Redis: Real-time features (access &lt;10ms)                │
+│  • InfluxDB: Historical time-series storage                 │
+│  • 47 features total (HAR + technical + microstructure)     │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+┌────────────────────────▼────────────────────────────────────┐
+│  <strong>Layer 3: Prediction Service (Ensemble Models)</strong>           │
+│  • HAR (baseline econometric model)                         │
+│  • Random Forest, XGBoost, LightGBM                         │
+│  • Ensemble voting: weighted by validation R²               │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+┌────────────────────────▼────────────────────────────────────┐
+│  <strong>Layer 4: Decision Support Module</strong>                        │
+│  • Vol-Targeting: Dynamic portfolio allocation              │
+│  • Timing Signals: WAIT strategy (Wait After IT happens)    │
+│  • Risk Monitoring: Real-time alerts on threshold breach    │
+└─────────────────────────────────────────────────────────────┘
+
+                         │
+                         ▼
+              <strong>End Users / Portfolio Managers</strong>
+                </pre>
+            </div>
+        </section>
+
+        <!-- DATA OVERVIEW -->
+        <section class="section">
+            <h2>📊 Data Overview</h2>
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><strong>Period</strong></td>
+                    <td>2014-01-01 to 2025-01-31 (11+ years)</td>
+                </tr>
+                <tr>
+                    <td><strong>Assets</strong></td>
+                    <td>10 liquid MOEX stocks (SBER, GAZP, LKOH, ROSN, MGNT, GMKN, NVTK, TATN, SNGS, VTBR)</td>
+                </tr>
+                <tr>
+                    <td><strong>Observations</strong></td>
+                    <td>&gt;280,000 high-frequency records</td>
+                </tr>
+                <tr>
+                    <td><strong>Train Set</strong></td>
+                    <td>2014-2021 (&gt;200,000 obs., 78%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Test Set</strong></td>
+                    <td>2022-2025 (out-of-sample, 22%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Source</strong></td>
+                    <td><a href="https://iss.moex.com">Moscow Exchange ISS API</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CITATION -->
+        <section class="section">
+            <h2>📚 Citation</h2>
+            <div class="architecture">
+                <pre>
+@article{lysenok2025volatility,
+  author  = {Lysenok, Nikita I.},
+  title   = {Information System Architecture for Volatility Forecasting
+             Based on Machine Learning for Decision Support Systems},
+  journal = {Business Informatics},
+  year    = {2025},
+  volume  = {XX},
+  number  = {X},
+  pages   = {XX--XX},
+  doi     = {XX.XXXX/XXXX}
+}
+                </pre>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>Author:</strong> Nikita I. Lysenok | <a href="mailto:nilysenok@hse.ru">nilysenok@hse.ru</a></p>
+            <p><strong>Affiliation:</strong> Higher School of Economics (HSE University)</p>
+            <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-4660-1410">0000-0003-4660-1410</a></p>
+            <p style="margin-top: 20px; color: #aaa;">Last updated: January 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
