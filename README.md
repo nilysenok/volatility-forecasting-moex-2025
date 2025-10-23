@@ -37,7 +37,7 @@
 
 **4-уровневая микросервисная архитектура:**
 
-![Архитектура системы](results/figures/architecture_diagram_v2.png)
+![Архитектура системы](results/figures/architecture_diagram_v2.png?v=4)
 
 **Компоненты системы:**
 
