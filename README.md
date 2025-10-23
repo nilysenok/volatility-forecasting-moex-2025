@@ -39,12 +39,23 @@
 
 ![Архитектура системы](results/figures/architecture_diagram_v2.png)
 
-**Основные компоненты:**
+**Компоненты системы:**
 
-1. **Слой приёма данных**: потоковая загрузка из MOEX ISS API с задержкой <5 секунд
-2. **Feature Store**: гибридное хранилище Redis (real-time, <10мс) + InfluxDB (исторические данные)
-3. **Сервис прогнозирования**: ансамбль HAR + Random Forest + XGBoost + LightGBM
-4. **DSS модуль**: динамическая аллокация портфеля на основе прогнозов волатильности
+1. **Слой приёма данных**
+   - MOEX ISS API • Задержка <5 секунд
+   - Real-time потоки данных
+
+2. **Feature Store (гибридное хранилище)**
+   - Redis: Real-time данные (доступ <10мс)
+   - InfluxDB: Time-series БД (исторические данные)
+
+3. **Сервис прогнозирования (Ensemble Models)**
+   - HAR • Random Forest • XGBoost • LightGBM
+   - Latency: 87ms (p99) • R²: 0.256 • Uptime: 99.7%
+
+4. **Модуль поддержки решений (DSS)**
+   - Vol-targeting аллокация портфеля • Мониторинг рисков и алерты • Timing сигналы (WAIT стратегия)
+   - Sharpe: +35% • CAGR: +111% • Max Drawdown: -24%
 
 ---
 
